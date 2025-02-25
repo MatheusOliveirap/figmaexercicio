@@ -1,0 +1,141 @@
+/* Configuração geral da página */
+body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container central */
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card de preço */
+  .pricing-card {
+    background: #111827;
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    width: 380px; /* Ajustado para não ficar muito largo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #6d28d9;
+    position: relative;
+  }
+  
+  /* Selo "Mais Vantajoso" */
+  .badge {
+    background: orange;
+    color: black;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #ff6f00;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  /* Texto "Para você decolar" */
+  .subtitle {
+    font-size: 13px;
+    color: #8b5cf6;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 5px 8px;
+    border: 1px solid #6d28d9;
+    border-radius: 5px;
+    margin-bottom: 12px;
+  }
+  
+  /* Título do plano */
+  .title {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Preço */
+  .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  
+  /* Botão de assinatura */
+  .subscribe-button {
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    transition: 0.3s;
+    margin-top: 15px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  .subscribe-button:hover {
+    background: #6d28d9;
+  }
+  
+  /* Linha divisória */
+  .divider {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+  }
+  
+  /* Lista de recursos */
+  .features {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Cada item da lista */
+  .features li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+  
+  /* Ícones de verificação */
+  .checkmark {
+    color: #22c55e;
+    font-size: 1.2rem;
+  }
+  
+  /* Ícone de informação */
+  .info-icon {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+  }
+  
+  /* Ajuste de layout para responsividade */
+  @media (max-width: 768px) {
+    .pricing-card {
+      width: 90%;
+      padding: 20px;
+    }
+  }
